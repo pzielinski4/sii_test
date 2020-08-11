@@ -1,0 +1,2 @@
+webserver:
+  image: pzielinski4/kinesis:latest

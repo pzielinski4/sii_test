@@ -1,0 +1,4 @@
+name: kinesis
+description: test application for AWS Kinesis Video Stream using Gstreamer
+category: Programming
+version: 1.0
