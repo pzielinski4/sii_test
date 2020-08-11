@@ -1,2 +1,3 @@
-webserver:
+kinesis:
   image: pzielinski4/kinesis:latest
+  command: gst-launch-1.0 --version
