@@ -39,3 +39,15 @@
     required: true
     default: "always"
     type: string
+  - variable: HOST_LOCATION
+    description: 'Host location for binding'
+    label: 'Host path'
+    required: true
+    default: /home/video_bind
+    type: string
+  - variable: CONTAINER_LOCATION
+    description: 'Container location for binding'
+    label: 'Container path'
+    required: true
+    default: /home/host_bind
+    type: string    
