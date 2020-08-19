@@ -1,3 +1,7 @@
 kinesis:
   image: pzielinski4/kinesis:latest
-  command: gst-launch-1.0 rtspsrc location="${RSTP_LOCATION}" short-header=TRUE ! rtph264depay ! h264parse ! kvssink stream-name="${AWS_STREAM_NAME}" storage-size=512 access-key="${AWS_ACCESS_KEY}" secret-key="${AWS_SECRET_KEY}" aws-region="${AWS_REGION}" key-frame-fragmentation=false fragment-duration=5000
+  volumes:
+       - type: bind
+         source: ${HOSTLOCATION}
+         target: ${CONTAINERLOCATION}
+  command: python3 ${CONTAINERLOCATION}/video_to_json.py
