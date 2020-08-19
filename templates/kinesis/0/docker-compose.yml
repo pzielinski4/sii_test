@@ -2,6 +2,6 @@ kinesis:
   image: pzielinski4/kinesis:latest
   volumes:
        - type: bind
-         source: ${HOSTLOCATION}
-         target: ${CONTAINERLOCATION}
-  command: python3 ${CONTAINERLOCATION}/video_to_json.py
+         source: ${HOST_LOCATION}
+         target: ${CONTAINER_LOCATION}
+  command: python3 ${CONTAINER_LOCATION}/video_to_json.py
