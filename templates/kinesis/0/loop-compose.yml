@@ -3,42 +3,6 @@
   version: latest
   uuid: awskvs—0
   questions:
-  - variable: RSTP_LOCATION
-    description: 'The camera RTSP url (location)'
-    label: 'RTSP URL:'
-    required: true
-    default: RTSP-location
-    type: string
-  - variable: AWS_STREAM_NAME
-    description: 'AWS Stream Name'
-    label: 'Stream Name:'
-    required: true
-    default: stream-name
-    type: string
-  - variable: AWS_ACCESS_KEY
-    description: 'AWS Access Key'
-    label: 'Access Key:'
-    required: true
-    default: access-key
-    type: string
-  - variable: AWS_SECRET_KEY
-    description: 'AWS Secret Key'
-    label: 'Secret Key:'
-    required: true
-    default: secret-key
-    type: string
-  - variable: AWS_REGION
-    description: 'AWS Region i.e: ''us-west-2'''
-    label: 'Region:'
-    required: true
-    default: us-west-2
-    type: string
-  - variable: RESTART
-    description: 'Application restart option: no, always, on-failure'
-    label: 'Restart:'
-    required: true
-    default: "always"
-    type: string
   - variable: HOST_LOCATION
     description: 'Host location for binding'
     label: 'Host path'
